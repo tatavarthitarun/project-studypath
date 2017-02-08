@@ -4,6 +4,7 @@ body{
   margin:0;
   background-color:#f4f4f4;
   overflow:auto;
+    color:#FAF6F8;
 }
 div{
 display: block;
@@ -15,6 +16,11 @@ header{
  min-height: 70px;
  padding-top: 30px;
 border-bottom: blue 3px solid;
+    background:#581845  ; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(90deg, #581845  , #900C3F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #581845  ,#900C3F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #581845  , #900C3F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #581845  , #900C3F); /* Standard syntax (must be last) */
 }
 .container{
   width:80%;
