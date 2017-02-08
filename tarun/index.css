@@ -24,9 +24,12 @@ border-bottom: blue 3px solid;
 header #branding{
   float:left;
 }
-header #inarea{
-  float: right;
-}
+ header #inarea{
+        position: absolute;
+        top: 3px;
+        right:10px ;
+        float: right;
+         }
 #searcharea {
   margin-left: 40%;
   margin-top: 18px;
@@ -52,7 +55,6 @@ header #inarea{
 }
 @media(max-width: 768px){
   header #branding,
-  header #inarea,
   header #searcharea,
   header #searcharea table{
     float:none;
@@ -89,4 +91,10 @@ header{
   #searcharea input[type=text]:focus {
       width: 80%;
   }
+    header #inarea{
+        position: absolute;
+        top: 3px;
+        right:10px ;
+        float: right;
+         }
 }
