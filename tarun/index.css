@@ -10,6 +10,14 @@ body{
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+    max-height: 500px
+    
+}
+.mySlides {display:none}
 div{
 display: block;
 
@@ -31,6 +39,13 @@ border-bottom: blue 3px solid;
   width:80%;
   overflow: hidden;
   margin: auto;
+    border-radius: 8px;
+}
+.container1{
+  width:90%;
+  overflow: hidden;
+  margin: auto;
+    border-radius: 8px;
 }
 header #branding{
   float:left;
@@ -65,6 +80,99 @@ header #branding{
 
 #searcharea input[type=text]:focus {
     width: 50%;
+}
+/*.brandingcarousel{
+    margin-top: 100px;
+    width:500%;
+    max-height: 500px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(90deg, #581845  , #900C3F);
+     
+}*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dots{
+    position:absolute;
+    top:450px;
+   
+    left:40%;
+    right:40%;
+    border-radius: 5px;
+    
+}
+.active {
+  background-color: #717171;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  margin:0 2px;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.carouseleft{
+    /*margin-top: 10px;*/
+    position: absolute;
+    top:400px;
+    left:5%;
+    float:left;
+    color:white;
+    width: 30px;
+    height: auto;
+    background:  rgba(0, 0, 0, 0.2);
+}
+.carouselright{
+    /*margin-top: 10px;*/
+    position:absolute;
+    text-align: right;
+     top:400px;
+    right:5%;
+    float:right;
+    color:white;
+     width: 30px;
+    height: auto;
+    background:  rgba(0, 0, 0, 0.2);
+}
+.carousel{
+    margin-top: 10px;
+   
+    max-height: 300px;
+    width: 100%;
+    background-color:floralwhite;
+}
+.container1 img{
+
 }
 @media(max-width: 768px){
   header #branding,
@@ -103,6 +211,7 @@ header{
 
   #searcharea input[type=text]:focus {
       width: 80%;
+     
   }
     header #inarea{
         position: absolute;
