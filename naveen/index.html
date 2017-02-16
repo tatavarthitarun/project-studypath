@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>career path</title>
+    <script>
+        function myFunction(x) {
+        x.classList.toggle("change");
+}
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $(".container").click(function(){
+                $(".close").animate({
+                    height: 'toggle'
+                });
+            });
+        });
+    </script> 
+</head>
+
+    
+    
+<body>
+    
+  <!--  logo side design-->
+    
+    <header>
+        <div class="header">
+            <h1>Career Path Project</h1>
+        </div>
+        <div class="navigation">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+           <!--  navigation side dasign  -->     
+            
+            <nav>        
+                <ul class="close">
+                <li><a  class="active" href="#">Home</a></li>
+                <li class="streems"><a href="#">Streems</a>
+
+                    <ul class="submenu streemslist">
+                        <li>
+                            <a href="#">UG </a> 
+                            <a href="#">Engineering </a>
+                            <a href="#">Medical </a>
+                            <a href="#">PG </a>
+                            <a href="#">Vocational </a>
+
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="streems"><a href="#">Colleges</a>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    
+    <!--main body design-->
+    
+    <div class="mainbody">
+       
+    </div>
+
+    <!--footer body design-->
+ 
+    <div class="footerbody">
+        
+        
+        <div class="box about">
+            <h4>About us</h4>
+            <p>Career Path.com is the exclusive education guide portal promoted by Bhavan's vivekananda college, which believes that empowerment of youth is essential to country's development. 
+            </p>
+        </div>
+        
+        
+        <div class="box menus">          
+            <h4>Menus</h4>
+            <p><a href="#">Blog</a></p> 
+            <p><a href="#">Colleges</a></p>
+            <p><a href="#">Courses</a></p>             
+        </div>
+        
+        
+        <div class="box contact">
+            <h4>Contact Us</h4>
+            <p>TTV Vamsi krishna- tatavarthitarun@gmail.com
+            </p>
+            <p>N.Naveen- naveenyadav9515@gmail.com
+            </p> 
+            <p>Bhavans vivekananda college, sainikpuri,secendrabad.
+            </p> 
+        </div>
+
+    </div>
+    <div  class="copyright">
+        <div class="icons">
+            <a href="#" title="Facebook"><img src="./images/facebook.png"></a>
+            <a href="#" title=" Google Plus"><img src="./images/googleplus.png"></a>
+            <a href="#" title=" You Tube"><img src="./images/youtube.png"></a>
+            <a href="#" title="Linked In"><img src="./images/linkedin.png"></a>
+            </div>
+        <div class="icons">
+            <a href="#" title="Twitter"><img src="./images/twitter.png"></a>
+            <a href="#" title=" Blog"><img src="./images/blog.png"></a>
+            <a href="#" title="Instagram"><img src="./images/instagram.png"></a>
+            <a href="#" title="Pinterest"><img src="./images/pinterest.png"</a>
+        </div>
+        <div>
+            <h1> &copy Copyright @2017 Study Path.com</h1>
+        </div>
+    </div>
+</body>
+</html>
