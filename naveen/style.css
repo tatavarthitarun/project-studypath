@@ -1,0 +1,261 @@
+/*css for the total body*/
+*{  margin: 0px;
+    padding:0px; 
+}
+Body{
+    font: 15px/1.5  verdana,arial,helvetica,sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* css for the header and the logo */ 
+
+
+.header{
+    background: #35424a;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    text-align: center;
+    min-height: 70px;
+    border-bottom: #8491d 3px solid;
+    
+
+}
+nav{
+    padding: 0px 0px 0px 15px;
+    text-transform: uppercase;
+
+}
+
+/*menu icon*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* css for the menu bar*/
+
+.navigation{
+    width: 100%;
+    background-color: #5c755e;
+    float: left;
+  
+}
+
+.navigation ul li{
+    list-style: none;
+    float: left;
+    display: inherit;
+}
+.navigation ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: black;
+    font-size: 15px;
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+
+
+.navigation ul li a:hover{
+    background-color: #d3d3d3; 
+    color: green;
+    transition: background 0.4s linear;
+    border-bottom: 2px solid red;
+    
+}
+
+.active{
+    background-color: #d3d3d3;
+}
+
+
+/*css for the submenu*/
+
+
+.navigation ul li ul.submenu{
+    max-width:100%;
+    background-color: #d3d3d3;
+    position: absolute;
+    text-transform: capitalize;
+    display: none;
+    
+}
+.navigation ul li:hover ul.submenu{
+    display: block;
+    
+}
+
+.navigation ul li ul.submenu li a:hover{
+    background-color: #5c755e;
+    color: blue;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-bottom: 0px none #d3d3d3;
+    
+}
+ 
+/*css for the footer */
+.mainbody{
+      height:400px;
+      background-color:#ffffff;
+      margin:5px;
+      padding:15px;
+}
+
+
+.footerbody {
+    color: white;
+    background-color: #5c755e;
+    overflow: hidden;
+    margin-top: 5px;
+    text-align: justify;
+    padding-left: 6%;
+}
+
+.footerbody .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+.footerbody .box h4{
+    color: bisque;
+    text-decoration: underline;  
+    text-align: center;
+}
+
+.footerbody .box a{
+    color: white;
+    text-decoration: none;   
+}
+
+.footerbody .box a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.footerbody .about p{
+    text-indent: 100px;
+}
+
+.footerbody .menus p{
+    text-align: center;
+    line-height: 35px;
+}
+
+.footerbody .contact{
+    text-align: center;
+
+}
+
+.copyright{
+    background: #35424a;
+    width: 100%;
+    font-size: 7px;
+    color: white;
+    text-align: center;
+    
+}
+
+.icons{
+    display: inline;
+}
+.copyright div img{
+    display: inline-block;
+    text-align: center;
+    padding: 7px 12px 2px 12px;
+    width: 20px;
+}
+.copyright div a{
+text-decoration: none;
+}
+.copyright div img:hover{
+    width: 22px;
+}
+
+.copyright div h1{
+    color: white;
+
+}
+
+
+/*css for mobile screen*/
+@media screen and (max-width: 700px){
+    div ul{
+        width: 100%;
+        display:none;
+    }
+    div ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+    }
+    .container{
+        display: block;
+    }
+
+    .navigation ul li ul.submenu{
+        width: 140px;       
+}
+    .navigation ul li a:hover{
+        width: 144px;    
+}
+    .navigation ul li:hover ul.submenu{
+    margin: 0px 0px 0px 40%;
+    
+}
+    
+    .navigation ul li:hover ul.submenu li a{
+            display: block;
+            width: 120px;
+            padding: 15px 0px;
+            text-align: center;
+    }
+    .footerbody {
+
+    padding-left: 0%;
+}
+    
+    .footerbody .box{
+    box-sizing: border-box;
+    width: 100%;
+    display:inline;
+    text-align: justify;
+    padding: 5px 20px;
+
+}
+    .icons{
+    display: block;
+        padding-top: 10px;
+}
+     
+}
+
