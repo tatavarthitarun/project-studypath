@@ -1,5 +1,3 @@
-# Button Counter App
-
 Button Counter App is a simple Android application built using Jetpack Compose. It allows users to increment a counter by clicking a button and provides additional features such as opening a README file and toggling between light and dark themes.
 
 Features
